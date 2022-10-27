@@ -91,7 +91,11 @@ button:hover {
     align-items: center;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 600px) {
+.mobile-img {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
     .main-container {
         display: flex;
         flex-direction: column;
@@ -110,6 +114,14 @@ button:hover {
 
     .info-container {
         border-radius: 0 0 10px 10px;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
     }
 }
 
