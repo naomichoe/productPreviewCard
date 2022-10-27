@@ -26,7 +26,6 @@ body {
 .main-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 100px auto;
 }
 
@@ -34,17 +33,24 @@ body {
     background-color: white;
     max-width: 300px;
     border-radius: 0 10px 10px 0;
-    height: 450px;
     padding: 30px;
+    flex-shrink: 0;
+}
+
+.product-img {
+    max-width: 300px;
+    max-height: 450px;
+    flex-shrink: 0;
 }
 
 img {
-    max-width: 300px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px 0 0 10px;
 }
 
 #product-type {
-    letter-spacing: 4px;
+    letter-spacing: 5px;
 }
 
 h2 {
@@ -68,7 +74,7 @@ button {
     border-radius: 5px;
     border: none;
     padding: 10px 30px;
-    margin: 0 50px;
+    width: 100%;
 }
 
 button:hover {
@@ -76,7 +82,7 @@ button:hover {
 }
 
 #product-type, h2, #product-info, .prices {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .prices {
@@ -85,8 +91,27 @@ button:hover {
     align-items: center;
 }
 
+@media only screen and (min-width: 375px) and (max-width: 600px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto;
+    }
 
+    .product-img {
+        flex-shrink: 0;
+    }
 
+    img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .info-container {
+        border-radius: 0 0 10px 10px;
+    }
+}
 
 footer {
     margin-top: 50px;
