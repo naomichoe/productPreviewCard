@@ -34,6 +34,7 @@ body {
     background-color: white;
     max-width: 300px;
     border-radius: 0 10px 10px 0;
+    height: 450px;
     padding: 30px;
 }
 
@@ -58,6 +59,7 @@ h2, #sale-price {
 
 #sale-price {
     color: hsl(158, 36%, 37%);
+    margin-right: 15px;
 }
 
 button {
@@ -66,12 +68,22 @@ button {
     border-radius: 5px;
     border: none;
     padding: 10px 30px;
+    margin: 0 50px;
 }
 
 button:hover {
     background-color: hsl(158, 35%, 20%);;
 }
 
+#product-type, h2, #product-info, .prices {
+    margin-bottom: 10px;
+}
+
+.prices {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 
 
