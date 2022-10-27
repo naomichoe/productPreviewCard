@@ -81,6 +81,11 @@ button:hover {
     background-color: hsl(158, 35%, 20%);;
 }
 
+button > img {
+    max-width: 13px;
+    margin-right: 10px;
+}
+
 #product-type, h2, #product-info, .prices {
     margin-bottom: 20px;
 }
