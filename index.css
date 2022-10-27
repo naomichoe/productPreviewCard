@@ -27,13 +27,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 100px auto;
 }
 
 .info-container {
     background-color: white;
     max-width: 300px;
     border-radius: 0 10px 10px 0;
-    padding: 20px;
+    padding: 30px;
 }
 
 img {
@@ -75,6 +76,9 @@ button:hover {
 
 
 
+footer {
+    margin-top: 50px;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
