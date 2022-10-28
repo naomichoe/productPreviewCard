@@ -82,11 +82,12 @@ button {
     padding: 10px 30px;
     width: 100%;
     font-family: inherit;
+    cursor: pointer;
+    display: flex;
 }
 
 button:hover {
     background-color: hsl(158, 35%, 20%);
-    cursor: pointer;
 }
 
 button > img {
